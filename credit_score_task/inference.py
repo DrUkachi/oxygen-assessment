@@ -1,13 +1,13 @@
 import joblib
 import pandas as pd
 # 1. Load the fitted pipeline
-pipeline_path = "full_credit_pipeline.joblib"
+pipeline_path = "./models/full_credit_pipeline_new.joblib"
 
 loaded_pipeline = joblib.load(pipeline_path)
 print("\n--- Loaded Fitted Pipeline for Inference ---")
 
 # 2. Load the test data
-test_data_path = "data/test_data.csv"
+test_data_path = "./data/test_data.csv"
 test_data = pd.read_csv(test_data_path)
 
 # 3. Make predictions
